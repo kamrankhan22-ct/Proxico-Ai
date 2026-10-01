@@ -41,7 +41,7 @@ function App(){
         method:"POST",
         headers:{
   "Content-Type":"application/json",
-  "x-api-key":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,
+  "x-api-key":process.env.ANTHROPIC_API_KEY,
   "anthropic-version":"2023-06-01"
 },
         body:JSON.stringify({model:"claude-sonnet-4-20250514",max_tokens:1000,system:systemPrompt,messages:newMessages})
