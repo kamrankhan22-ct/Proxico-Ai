@@ -73,7 +73,7 @@ async function send() {
   const loadDiv = addMessage("bot", '<div style="display:flex;gap:6px"><div class="dot" style="animation-delay:0s"></div><div class="dot" style="animation-delay:.2s"></div><div class="dot" style="animation-delay:.4s"></div></div>');
 
   try {
-    const res = await fetch("/api/chat", {
+    const res = await fetch("https://api.anthropic.com/v1/messages", {
       method: "POST",
       headers: {"Content-Type":"application/json"},
       body: JSON.stringify({
