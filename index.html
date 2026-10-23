@@ -84,7 +84,7 @@ async function send() {
     addMessage("bot", reply);
   } catch(e) {
     loadDiv.remove();
-    addMessage("bot", "⚠️ Error. Please try again.");
+    alert(JSON.stringify(data));
   }
   sendBtn.disabled = false;
 }
