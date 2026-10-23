@@ -82,10 +82,9 @@ async function send() {
     messages.push({role:"assistant", content:reply});
     loadDiv.remove();
     addMessage("bot", reply);
-  } catch(e) {
+  } } catch(e) {
     loadDiv.remove();
-    alert(JSON.stringify(data));
-  }
+    addMessage("bot", "Error: " + e.message);
   sendBtn.disabled = false;
 }
 
